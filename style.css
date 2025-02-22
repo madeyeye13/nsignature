@@ -465,6 +465,7 @@
 
   .footer-link {
     transition: color 0.3s ease;
+    font-family: var(--font-2);
   }
 
   .footer-link:hover {
@@ -482,6 +483,7 @@
   .booking-btn {
     transition: all 0.3s ease;
     width: 100%;
+    border-radius: 0px;
   }
 
   @media (min-width: 768px) {
@@ -491,6 +493,11 @@
   }
 
   .booking-btn:hover {
-    background-color: var(--dark-main-color);
+    background-color: var(--white-color);
     color: var(--gold-color);
+  }
+
+  #footer {
+    padding-left: 25px;
+    padding-right: 25px;
   }
