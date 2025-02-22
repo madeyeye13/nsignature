@@ -1,0 +1,235 @@
+
+/* Tablet Styles (min-width: 728px) */
+@media (min-width: 728px) {
+    .content {
+        padding: 0 40px;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        max-width: 80%;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .arrow {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+
+
+
+/*--------------------------DEMARCATION------------------*/
+
+
+
+
+@media (min-width:1024px) {
+
+    .head1 {
+        display: none;
+    }
+
+
+    /*--------------HEADER-------------*/
+
+
+    .head2 {
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        /* height: 100vh; */
+    }
+
+    /* Top Contact Bar */
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 10px 50px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact-info div {
+        display: inline-block;
+        margin-right: 20px;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .contact-info i {
+        color: var(--gold-color); /* Gold color */
+        margin-right: 5px;
+    }
+
+    .social-icons i {
+        margin-left: 15px;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .social-icons i:hover {
+        color: var(--gold-color);
+    }
+
+    /* Main Navigation */
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 50px;
+        background-color: white;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+        max-height: 60px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        
+        
+    }
+
+    .nav-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-menu ul li a.active,
+    .nav-menu ul li a:hover {
+        color: var(--gold-color);
+    }
+
+    .btn-appointment {
+        display: inline-block;
+        background-color: var(--gold-color); 
+        color: white;
+        text-decoration: none;
+        padding: 8px 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 2px solid var(--gold-color); 
+        position: relative;
+        overflow: hidden;
+        transition: color 0.3s ease;
+        z-index: 1; 
+    }
+    
+    .btn-appointment::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--dark-main-color);
+        z-index: 0; 
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .btn-appointment:hover::before {
+        width: 100%;
+    }
+    
+    .btn-appointment:hover {
+        color: var(--white-color); 
+        border: 1px solid var(--dark-main-color); 
+    }
+    
+    .btn-appointment span {
+        position: relative;
+        z-index: 2; 
+    }
+
+
+    /*-----------------HERO VIDEO-----------------*/
+
+
+    .content {
+        padding: 0 60px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .content h3 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+        max-width: 700px;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        gap: 12px;
+        padding: 12px 24px;
+    }
+
+    .arrow {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    /* Demo content styles */
+    .dummy-content {
+        padding: 20px;
+        background: white;
+        min-height: 100vh;
+    }
+
+    /*---------------------------MASONRY GRID--------------*/
+
+    #mason {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+
+    /*---------------------TESTIMONIAL------------------*/
+
+
+    .testimonial p {
+        padding-left: 0px;
+        padding-right: 25px;
+    }
+
+    #testimonial {
+        margin-bottom: 0px;
+      }
+    
+
+   
+
+
+}
