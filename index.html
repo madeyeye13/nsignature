@@ -72,6 +72,17 @@
 </head>
 <body>
 
+  <!-----------SCROLL TO THE TOP------------>
+
+  <div class="scroll-top">
+    <div class="scroll-progress">
+        <svg width="45" height="45" viewBox="0 0 45 45">
+            <circle cx="22.5" cy="22.5" r="20"/>
+        </svg>
+    </div>
+    <i class="ti-angle-up"></i>
+</div>
+
 
      <!-----------------HEADER----------------->
 
@@ -409,8 +420,8 @@
           <div class="md:flex md:items-center md:gap-12 lg:gap-24">
             <!-- Text Content -->
             <div class="md:w-1/2">
-              <h5 class="text-white text-lg mb-2 reveal reveal-delay-1">A team driven by passion, excellence, &</h5>
-              <h1 class="font-[--font-1] text-[--gold-color] text-4xl lg:text-5xl font-medium mb-6 reveal reveal-delay-2">Heartfelt Connection</h1>
+              <h5 class="text-white text-lg mb-2 reveal reveal-delay-1" style="font-family: var(--font-1); font-weight: 300; font-size: 0.8rem; letter-spacing: 1px;">A team driven by passion, excellence, &</h5>
+              <h1 class="font-[--font-1] text-[--gold-color] text-4xl lg:text-5xl font-medium mb-6 reveal reveal-delay-2" style="font-family: var(--font-1); font-weight: 400; letter-spacing: 1px;">Heartfelt Connection</h1>
               <p class="text-white mb-8 leading-relaxed reveal reveal-delay-3">
                 We've been more than just an event company—we've been a team of passionate professionals dedicated to creating seamless, heartfelt celebrations. From the start, we chose quality over quantity, taking on only a select number of events to ensure every client receives our full attention and expertise.
               </p>
@@ -458,7 +469,7 @@
             <!-- Contact Section -->
             <div>
               <h3 class="text-[--gold-color] font-[--font-1] text-2xl mb-6">Contact Us</h3>
-              <p class="text-white font-[--font-2] mb-6" style="font-family: var(--font-2);">Abuja, Nigeria</p>
+              <p class="text-white font-[--font-2] mb-6" style="font-family: var(--font-2); font-weight: 300;">Abuja, Nigeria</p>
               <div class="space-y-2">
                 <p class="text-[--gold-color] font-[--font-1] text-xl" style="font-size: 1.4rem;">+234 814 082 1647</p>
                 <p class="text-[--gold-color] font-[--font-1] text-sm">nsignatureevents@gmail.com</p>
@@ -469,10 +480,10 @@
             <div>
               <h3 class="text-[--gold-color] font-[--font-1] text-2xl mb-6">Company</h3>
               <ul class="space-y-3 font-[--font-2] text-white">
-                <li><a href="#" class="footer-link">About Us</a></li>
-                <li><a href="#" class="footer-link">Services</a></li>
-                <li><a href="#" class="footer-link">Gallery</a></li>
-                <li><a href="#" class="footer-link">Contact</a></li>
+                <li><a href="about.html" class="footer-link">About Us</a></li>
+                <li><a href="service.html" class="footer-link">Services</a></li>
+                <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                <li><a href="contact.html" class="footer-link">Contact</a></li>
               </ul>
             </div>
       
@@ -489,7 +500,7 @@
                     <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
                   </svg>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="https://www.instagram.com/nsignature_events/" class="social-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="white" stroke-width="2" class="feather feather-instagram">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
@@ -508,7 +519,7 @@
             <!-- Booking Section -->
             <div>
               <h3 class="text-[--gold-color] font-[--font-1] text-2xl mb-6">Make A Booking Now</h3>
-              <button class="booking-btn bg-[--gold-color] text-[--dark-main-color] px-6 py-3  font-[--font-2] font-medium">
+              <button class="booking-btn bg-[--gold-color] text-[--dark-main-color] px-6 py-3  font-[--font-2] font-medium" style="font-family: var(--font-1);">
                 Become Our Client
               </button>
             </div>
@@ -522,9 +533,9 @@
                   <circle cx="12" cy="12" r="10" />
                   <path d="M14.5 9a2.5 2.5 0 0 0-5 0v2c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V9z" />
                 </svg>
-                <span>N Signature Event 2025</span>
+                <span style="font-family: var(--font-1); letter-spacing: 2px; font-weight: 500;">N Signature Event 2025</span>
               </div>
-              <div>
+              <div style="font-family: var(--font-1); letter-spacing: 2px; font-weight: 400; font-size: 0.7rem;">
                 Developed by <a href="https://betzalelco.xyz" class="text-[--gold-color] hover:underline">Bezalel Concept</a>
               </div>
             </div>
@@ -539,5 +550,14 @@
 
     
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+          duration: 1000,
+          once: true,
+      });
+  </script>
+  
 </body>
 </html>

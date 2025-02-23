@@ -1,4 +1,38 @@
-////HEADER
+
+
+
+
+
+///////SCROLL TO THE TOP
+
+const scrollTop = document.querySelector('.scroll-top');
+        const progressCircle = document.querySelector('.scroll-progress circle');
+        const circumference = progressCircle.getTotalLength();
+
+        // Show/hide scroll button and update progress
+        window.addEventListener('scroll', () => {
+            const scrollPercent = (document.documentElement.scrollTop || document.body.scrollTop) / 
+                ((document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight);
+            
+            const scrolled = Math.min(Math.max(scrollPercent, 0), 1);
+            const offset = circumference - (scrolled * circumference);
+            
+            progressCircle.style.strokeDashoffset = offset;
+
+            if (scrolled > 0.1) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll to top when clicked
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });////HEADER
 
 const header = document.querySelector('header');
         const menuIcon = document.querySelector('.menu-icon');
@@ -131,3 +165,79 @@ const observerOptions = {
       }
     }, stepDuration);
   }
+
+
+  //FREQUENTLY ASKED QUESTIONS
+
+
+  document.querySelectorAll(".faq-question").forEach(item => {
+    item.addEventListener("click", function() {
+        let answer = this.nextElementSibling;
+        let icon = this.querySelector(".toggle-icon");
+        
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            icon.textContent = "+";
+        } else {
+            document.querySelectorAll(".faq-answer").forEach(ans => ans.style.display = "none");
+            document.querySelectorAll(".toggle-icon").forEach(ic => ic.textContent = "+");
+            
+            answer.style.display = "block";
+            icon.textContent = "-";
+        }
+    });
+});
+
+
+
+/////BOOKING
+
+document.getElementById('bookingForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const spinner = form.querySelector('.spinner-dots');
+  const modal = document.getElementById('successModal');
+  const messageText = modal.querySelector('.message-text');
+
+  // Show loading animation
+  spinner.classList.add('active');
+  submitBtn.disabled = true;
+
+  try {
+      const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+          // Get the name from the form
+          const name = form.querySelector('input[name="groom_name"]').value || 
+                       form.querySelector('input[name="bride_name"]').value || 
+                       'Guest';
+
+          // Show modal
+          messageText.innerHTML = `Thanks ${name}, we received your form and will get back to you soon!<br><br>If this is urgent, reach us on WhatsApp.`;
+
+          modal.style.display = 'flex';
+
+          // Reset form
+          form.reset();
+      } else {
+          throw new Error('Form submission failed');
+      }
+  } catch (error) {
+      alert('There was a problem submitting your form. Please try again.');
+  } finally {
+      // Hide loading animation
+      spinner.classList.remove('active');
+      submitBtn.disabled = false;
+  }
+});
+
+// Close modal
+document.querySelector('.close-modal').addEventListener('click', () => {
+  document.getElementById('successModal').style.display = 'none';
+});

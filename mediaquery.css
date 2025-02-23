@@ -226,9 +226,82 @@
 
     #testimonial {
         margin-bottom: 0px;
-      }
+    }
+
+
+
+
+
+    /*----------------OTHER PAGES---------------*/
+
+
+    #oth-hero {
+        background-image: url(image/17.jpg);
+        margin-top: 0%;
+        background-position: top center;
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.305);
+        overflow: hidden;
+    }
+
+    .oth-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 60%;
+        color: white;
+    }
     
 
+
+    /*-------------WHAT WE DO----------*/
+
+
+    .wec0 {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .wec1 {
+        width: 100%;
+    }
+
+    .wec1 p {
+        color: var(--dark-main-color);
+        font-family: var(--font-2);
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+
+    #wec {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        justify-content: center;
+        text-align: left;
+        overflow: hidden;
+        /* background-color: var(--yellow); */
+        }
+
+
+    /*---------------SERVICE--------------*/
+
+    .serv2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    /*--------------PLAN YOUR BIG DAY--------------*/
+    
+    
    
 
 
