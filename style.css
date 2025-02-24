@@ -354,7 +354,7 @@ a {
     font-family: var(--font-1);
     letter-spacing: 4px;
     font-weight: 400;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .text-center p {
@@ -1105,6 +1105,7 @@ a {
   font-family: var(--font-2);
   font-weight: 300;
   text-align: justify;
+
 }
 
 .about3 h4 {
@@ -1118,6 +1119,7 @@ a {
 
 .about3 p {
   font-family: var(--font-2);
+  margin-bottom: 20px;
 
 }
 
@@ -1364,6 +1366,11 @@ a {
   }
 }
 
+
+#gallery p {
+  font-family: var(--font-1);
+  letter-spacing: 1px;
+}
 
 
 
