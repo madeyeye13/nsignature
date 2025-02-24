@@ -32,7 +32,10 @@ const scrollTop = document.querySelector('.scroll-top');
                 top: 0,
                 behavior: 'smooth'
             });
-        });////HEADER
+        });
+        
+        
+////HEADER
 
 const header = document.querySelector('header');
         const menuIcon = document.querySelector('.menu-icon');
@@ -50,6 +53,23 @@ const header = document.querySelector('header');
                 menuIconI.classList.remove('ti-close');
                 menuIconI.classList.add('ti-menu');
             }
+});
+
+
+////////////ACTIVE LINK
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname.split("/").pop(); // Get the current page name
+  const navLinks = document.querySelectorAll(".nav-menu ul li a");
+
+  navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href").split("/").pop(); // Get the link's target page name
+      if (linkPath === currentPath) {
+          link.classList.add("active");
+      } else {
+          link.classList.remove("active");
+      }
+  });
 });
 
 
@@ -241,3 +261,42 @@ document.getElementById('bookingForm').addEventListener('submit', async (e) => {
 document.querySelector('.close-modal').addEventListener('click', () => {
   document.getElementById('successModal').style.display = 'none';
 });
+
+
+
+//////////////BOOKING PAGE CONTACT SCROLL REVEAL
+
+
+function revealOnScroll() {
+  const contact = document.getElementById("contact");
+  const scrollY = window.scrollY;
+  const sectionTop = contact.offsetTop - window.innerHeight + 100;
+
+  if (scrollY > sectionTop) {
+      contact.classList.add("show");
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+
+////////////GALLERY PAGE REVEAL ON SCROLL
+
+document.addEventListener("DOMContentLoaded", function () {
+  const revealElements = document.querySelectorAll("[data-reveal]");
+  
+  function revealOnScroll() {
+      revealElements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight * 0.9) {
+              el.classList.add("animate-fade-in");
+          }
+      });
+  }
+  
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+});
+
+
+//////LIGHTBOX

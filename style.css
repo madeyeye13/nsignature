@@ -25,6 +25,11 @@
 
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 
 
@@ -588,6 +593,8 @@
 
   .space-y-3 a {
     font-weight: 300;
+    text-decoration: none;
+    color: inherit;
   }
 
 
@@ -836,13 +843,61 @@
 
 
   }
-  /*--------------------BOOKING PAGE----------------*/
+
+
+  
+
+
+
 
   /*--------------------BOOKING PAGE----------------*/
 
   /*--------------------BOOKING PAGE----------------*/
 
   /*--------------------BOOKING PAGE----------------*/
+
+  /*--------------------BOOKING PAGE----------------*/
+
+  #glad {
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .glad1 {
+    margin-top: 50px;
+  }
+
+
+  .glad1 h2 {
+    font-family: var(--font-1);
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .hr {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 2px;
+    background-color: var(--gold-color);
+
+    
+  }
+
+  .glad1 span {
+    font-family: var(--font-4);
+    color: var(--gold-color);
+  }
+
+
+
+
+
+
 
       /* General Form Styles */
 .form-control, .form-select {
@@ -945,7 +1000,371 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
+  
 }
+
+#booking label, option {
+  font-family: var(--font-1);
+  letter-spacing: 1.5px;
+}
+
+
+/*----------BOOKING PAGE STYLING---------------*/
+
+
+#contact {
+  
+  background: #fff2e2;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#contact.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-container span {
+  font-family: var(--font-1);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: var(--gold-color);
+}
+
+.contact-item span {
+  font-size: 18px;
+  color: #333;
+}
+
+
+/*-------------------ABOUT PAGE STYLING-------------*/
+
+/*-------------------ABOUT PAGE STYLING-------------*/
+
+/*-------------------ABOUT PAGE STYLING-------------*/
+
+/*-------------------ABOUT PAGE STYLING-------------*/
+
+
+#about {
+  background-color: var(--dark-main-color);
+  color: white;
+}
+
+.about1 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.about2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-about {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about1 h3 {
+  color: var(--gold-color);
+  font-family: var(--font-1);
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.about1 p {
+  font-family: var(--font-2);
+  font-weight: 300;
+  text-align: justify;
+}
+
+.about3 h4 {
+  font-family: var(--font-1);
+  color: var(--gold-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  
+}
+
+.about3 p {
+  font-family: var(--font-2);
+
+}
+
+.aby {
+  display: none;
+}
+
+.abyy {
+  display: block;
+}
+
+
+/*--------------------MEET THE TEAM-------------------*/
+
+.team3 h2 {
+  font-family: var(--font-1);
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: var(--gold-color);
+}
+
+.team3 {
+  background-color: #fff2e2;
+  text-align: left;
+}
+
+.team4 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.team3 p {
+  font-family: var(--font-2);
+  text-align: justify;
+  font-size: 300;
+}
+
+.team3 p span {
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 1.3em;
+  color: var(--dark-main-color);
+}
+
+#team {
+  overflow: hidden;
+}
+
+
+/*----------------------GALLERY PAGE--------------*/
+/*----------------------GALLERY PAGE--------------*/
+/*----------------------GALLERY PAGE--------------*/
+/*----------------------GALLERY PAGE--------------*/
+
+#gallery {
+  background-color: #fff2e2;
+}
+
+
+
+/*----------------GALLERY SHOW-----------*/
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust for Tablets (728px and up) */
+@media (min-width: 728px) {
+  .image-grid {
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .image-grid img:nth-child(3n) {
+      grid-column: span 2;
+      grid-row: span 2;
+  }
+}
+
+/* Adjust for Larger Screens (1024px and up) */
+@media (min-width: 1024px) {
+  .image-grid {
+      grid-template-columns: repeat(5, 1fr);
+  }
+
+  .image-grid img:nth-child(5n) {
+      grid-column: span 1;
+      grid-row: span 2;
+  }
+}
+
+/* Hover effect */
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/*--------------LIGHTBOX---------------*/
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#lightbox.hidden {
+  display: none;
+}
+
+.lightbox-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+#zoom-in, #zoom-out {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#lightbox-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease;
+  cursor: grab;
+  position: relative;
+}
+
+#prev-arrow, #next-arrow {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev-arrow {
+  left: 20px;
+}
+
+#next-arrow {
+  right: 20px;
+}
+
+.close-lightbox, .ti-close {
+  color: var(--white-color);
+}
+
+
+/*----------------------OTHER EVENTS-----------------*/
+
+#other-events {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.gallery-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-scroll a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.gallery-scroll img {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Responsive for tablets and larger screens */
+@media (min-width: 728px) {
+  .gallery-scroll img {
+      width: 300px;
+      height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-scroll img {
+      width: 350px;
+      height: 230px;
+  }
+}
+
+
 
 
   

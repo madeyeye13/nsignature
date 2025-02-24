@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N SIGNATURE EVENTS | Our Services</title>
+    <title>N SIGNATURE EVENTS | Nasir & Hadiza</title>
     
     <meta name="description" content="N Signature Events specializes in professional event planning, coordination, and vendor sourcing. We create unforgettable weddings, corporate events, and special celebrations.">
     <meta name="keywords" content="event planning, wedding planning, corporate events, vendor management, event coordination, special events">
@@ -49,6 +49,7 @@
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM63cbz6SMjf2PgxGRc5mWut8PjCoanOz3Di0A4" crossorigin="anonymous">
 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
 
     <!-------------------------------CASCADING STYLESHEET---------------------------------->
 
@@ -150,135 +151,241 @@
     </header>
 
 
+
+    <style>
+        #oth-hero {
+    background-image: url(assets/narshad/thumbnail.jpg);
+    
+    background-position: top center;
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.305);
+    overflow: hidden;
+  }
+
+  .oth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    color: white;
+  }
+
+  .oth-content h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .p-row {
+    display: flex;
+    gap: 20px;
+
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--gold-color);
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    border-radius: 50px;
+  }
+
+  .p-row p {
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-family: var(--font-2);
+  }
+  
+  .p-row p:hover {
+    color: var(--gold-color); /* Change to your preferred hover color */
+    transform: scale(1.1); /* Slightly enlarge the text */
+  }
+
+  /*-----------------FORM------------------*/
+
+  #booking .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /*----------------MEDIAQUERY--------------*/
+
+  @media (min-width:1024px) {
+    /*----------------OTHER PAGES---------------*/
+
+
+    #oth-hero {
+        background-image: url(assets/narshad/thumbnail.jpg);
+        margin-top: 0%;
+        background-position: top center;
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.305);
+        overflow: hidden;
+    }
+
+    .oth-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 60%;
+        color: white;
+    }
+
+
+
+    /*-----------------FORM------------------*/
+
+  #booking .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+    
+  }
+
+
+
+
+    </style>
+
+
     <!---------------------------HERO IMAGE------------------------------->
 
     <section id="oth-hero">
 
         <div class="oth-content">
-            <h2 style="font-family: var(--font-1); font-weight: 400;">Our Services</h2>
+            <h2 style="font-family: var(--font-1); font-weight: 400;">Nasir & Hadiza</h2>
             <div class="p-row" style="font-family: var(--font-2); font-weight: 300;">
                 <a href="https://nsignatureevents.com"><p>NSignature Events</p></a>
                 <div class="dot"></div>
-                <a href="service.html"><p>Services</p></a>
+                <a href="gallery.html"><p>Gallery</p></a>
             </div>
         </div>
 
     </section>
 
+    <!-----------------------------------Gallery Catalog------------------------->
 
-    <!---------------WHAT WE DO----------------------->
+<section id="gal">
 
-    <section id="wec">
+  <div class="gal-img">
 
-        <div class="wec0">
-            <div class="wec1">
-                <h6>What We Do</h6>
-                <h2 data-aos="fade-up">Making Every <span>Special</span> Occasion Unforgettable</h2>
-                <p data-aos="fade-up" data-aos-delay="200">At N Signature Events, we believe every occasion should be more than just a gathering—it should be an experience that leaves a lasting impression. We specialize in curating elegant, meaningful, and seamless celebrations that reflect your unique style and vision.
+      <div class="gal-img1">
 
-                <br><br>From intimate gatherings to grand affairs, our team is dedicated to ensuring every detail is thoughtfully executed. With creativity, precision, and a passion for perfection, we transform your ideas into beautifully orchestrated events that you and your guests will remember for years to come. Let us bring your vision to life and create moments that truly matter.</p>
-            </div>
-
-            <div class="wec-image">
-                <img src="image/18.jpg" alt="image" data-aos="fade-up" data-aos-delay="300">
-            </div>
-        </div>
-   </section>
-
-   <!---------------SERVICE---------------------->
-
-   <section id="serv" class="w-full px-4 py-12 bg-white">
-    <div class=" serv2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
-      <!-- Corporate Events -->
-      <div class="relative group overflow-hidden h-[400px]">
-        <img src="image/23.jpg" alt="Corporate Events" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-        <img src="image/7.jpg" alt="Corporate Events Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-        <div class="absolute inset-0 bg-black bg-opacity-50">
-          <div class="absolute bottom-0 left-0 p-6 text-white">
-            <h3 class="text-2xl font-semibold mb-2">Corporate Events</h3>
-            <p class="text-sm">Transform your business gatherings into unforgettable experiences. From product launches to team building events, we handle the details while you focus on what matters - building relationships and closing deals.</p>
+          <div class="image-grid">
+              <img src="assets/narshad/1.jpg" alt="Image 1" data-index="1">
+              <img src="assets/narshad/2.jpg" alt="Image 2" data-index="2">
+              <img src="assets/narshad/3.jpg" alt="Image 3" data-index="3">
+              <img src="assets/narshad/4.jpg" alt="Image 4" data-index="4">
+              <img src="assets/narshad/5.jpg" alt="Image 5" data-index="5">
+              <img src="assets/narshad/6.jpg" alt="Image 6" data-index="6">
+              <img src="assets/narshad/7.jpg" alt="Image 7" data-index="7">
+              <img src="assets/narshad/8.jpg" alt="Image 8" data-index="8">
+              <img src="assets/narshad/9.jpg" alt="Image 9" data-index="9">
+              <img src="assets/narshad/10.jpg" alt="Image 10" data-index="10">
+              <img src="assets/narshad/11.jpg" alt="Image 11" data-index="11">
+              <img src="assets/narshad/12.jpg" alt="Image 12" data-index="12">
+              <img src="assets/narshad/13.jpg" alt="Image 13" data-index="13">
+              <img src="assets/narshad/14.jpg" alt="Image 14" data-index="14">
+              <img src="assets/narshad/15.jpg" alt="Image 15" data-index="15">
+              <img src="assets/narshad/16.jpg" alt="Image 16" data-index="16">
+              <img src="assets/narshad/17.jpg" alt="Image 17" data-index="17">
+              <img src="assets/narshad/18.jpg" alt="Image 18" data-index="18">
+              <img src="assets/narshad/19.jpg" alt="Image 19" data-index="19">
+              <img src="assets/narshad/20.jpg" alt="Image 20" data-index="20">
+              <img src="assets/narshad/21.jpg" alt="Image 21" data-index="21">
+              <img src="assets/narshad/22.jpg" alt="Image 22" data-index="22">
+              <img src="assets/narshad/23.jpg" alt="Image 23" data-index="23">
+              <img src="assets/narshad/24.jpg" alt="Image 24" data-index="24">
+              <img src="assets/narshad/25.jpg" alt="Image 25" data-index="25">
+              <img src="assets/narshad/26.jpg" alt="Image 26" data-index="26">
+              <img src="assets/narshad/27.jpg" alt="Image 27" data-index="27">
+              <img src="assets/narshad/28.jpg" alt="Image 28" data-index="28">
+              <img src="assets/narshad/29.jpg" alt="Image 29" data-index="29">
+              <img src="assets/narshad/30.jpg" alt="Image 30" data-index="30">
+              <img src="assets/narshad/31.jpg" alt="Image 31" data-index="31">
+              <img src="assets/narshad/32.jpg" alt="Image 32" data-index="32">
+              <img src="assets/narshad/33.jpg" alt="Image 33" data-index="33">
+              <img src="assets/narshad/34.jpg" alt="Image 34" data-index="34">
+              <img src="assets/narshad/35.jpg" alt="Image 35" data-index="35">
+              <img src="assets/narshad/36.jpg" alt="Image 36" data-index="36">
+              <img src="assets/narshad/37.jpg" alt="Image 37" data-index="37">
+              <img src="assets/narshad/38.jpg" alt="Image 38" data-index="38">
+              <img src="assets/narshad/39.jpg" alt="Image 39" data-index="39">
           </div>
-        </div>
+          
+
       </div>
-  
-      <!-- Wedding Planning -->
-      <div class="relative group overflow-hidden h-[400px]">
-        <img src="image/19.jpg" alt="Wedding Planning" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-        <img src="image/20.jpg" alt="Wedding Planning Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-        <div class="absolute inset-0 bg-black bg-opacity-50">
-          <div class="absolute bottom-0 left-0 p-6 text-white">
-            <h3 class="text-2xl font-semibold mb-2">Wedding Planning</h3>
-            <p class="text-sm">Your dream wedding starts here. We blend tradition with personal touches to create magical moments. From intimate ceremonies to grand celebrations, we'll turn your vision into a day you'll cherish forever.</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Event Consultancy -->
-      <div class="relative group overflow-hidden h-[400px]">
-        <img src="image/24.jpg" alt="Event Consultancy" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-        <img src="image/25.jpg" alt="Event Consultancy Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-        <div class="absolute inset-0 bg-black bg-opacity-50">
-          <div class="absolute bottom-0 left-0 p-6 text-white">
-            <h3 class="text-2xl font-semibold mb-2">Event Consultancy</h3>
-            <p class="text-sm">Got a vision but stuck on execution? Our seasoned consultants bring fresh perspectives to your event strategy. We'll help you navigate challenges and create experiences that leave lasting impressions.</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Venue Sourcing -->
-      <div class="relative group overflow-hidden h-[400px]">
-        <img src="image/21.jpg" alt="Venue Sourcing" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
-        <img src="image/22.jpg" alt="Venue Sourcing Hover" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
-        <div class="absolute inset-0 bg-black bg-opacity-50">
-          <div class="absolute bottom-0 left-0 p-6 text-white">
-            <h3 class="text-2xl font-semibold mb-2">Venue Sourcing</h3>
-            <p class="text-sm">Finding the perfect space shouldn't be a headache. We've got connections to hidden gems and premium venues across the city. Let us match you with a location that fits your style and budget.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!---------------Planning your next big day---------------------->
+  </div>
 
-  <section id="plan">
-
-    <div class="p-plan">
-
-        <div class="plan2">
-            <h2 style="font-family: var(--font-1); letter-spacing: 1px; font-weight: 400;">Planning Your Next Big Day?</h2>
-            <p style="font-family: var(--font-2); font-weight: 300;">Your special moments deserve a celebration that’s stress-free and unforgettable. <span>At N Signature Events,</span> we bring your vision to life with flawless planning and attention to detail. Whether it’s a wedding, birthday, or corporate event, we handle every element with creativity and care. Let us turn your big day into a beautifully curated experience that you and your guests will cherish forever.</p>
-            <a href="book.html" style="font-family: var(--font-2);"><button>Get In Touch</button></a>
-        </div>
-        <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq">
-                <div class="faq-item">
-                    <div class="faq-question">How far in advance should we book your service?
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="faq-answer">We recommend booking our services as early as possible to ensure availability for your desired date. For weddings, it's ideal to book at least 12-18 months in advance, especially during peak wedding seasons. For other events, such as corporate gatherings or parties, booking 6-12 months ahead is advisable. However, we understand that every situation is unique, so feel free to contact us for availability even if your event is sooner.</div>
-                </div>
-                <hr>
-                <div class="faq-item">
-                    <div class="faq-question">Do you do destination weddings?
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="faq-answer">Absolutely! We have experience planning events in various locations. Whether you're dreaming of a beachside ceremony or a romantic European destination, our team is equipped to handle all the logistics and coordination to make your dream wedding a reality, regardless of the location.</div>
-                </div>
-                <hr>
-                <div class="faq-item">
-                    <div class="faq-question">How do you handle unexpected changes or emergencies during an event?
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="faq-answer">We understand that unforeseen circumstances can arise, and we're well-prepared to handle them. Our team has extensive experience managing events of all sizes and is equipped to handle many last-minute changes or emergencies that may occur. We maintain open communication channels with vendors and have backup plans in place to mitigate any disruptions to your event. Rest assured; we'll work tirelessly behind the scenes to ensure that your special day goes off without a hitch!</div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
 </section>
+
+
+<div id="lightbox" class="hidden">
+  <div class="lightbox-header">
+      <span id="close-lightbox" class="ti-close"></span>
+      <span id="zoom-in" class="ti-zoom-in"></span>
+      <span id="zoom-out" class="ti-zoom-out"></span>
+      <span id="image-number"></span>
+  </div>
+  <div class="lightbox-content">
+      <span id="prev-arrow" class="ti-angle-left"></span>
+      <div id="lightbox-image-container">
+          <img id="lightbox-image" src="" alt="Lightbox Image">
+      </div>
+      <span id="next-arrow" class="ti-angle-right"></span>
+  </div>
+</div>
+
+<!------------------OTHER EVENTS------------------------->
+
+<section id="other-events" style="margin-top: 50px;">
+    <h2>Check Other Events</h2>
+    <div class="gallery-container">
+        <div class="gallery-scroll">
+            <a href="maryhim.html">
+                <img src="image/27.jpg" alt="Kayode & Tosin">
+                <p>Maryam & Ibrahim</p>
+            </a>
+            <a href="event2.html">
+                <img src="images/event2.jpg" alt="David & Sandra">
+                <p>David & Sandra</p>
+            </a>
+            <a href="event3.html">
+                <img src="images/event3.jpg" alt="Michael & Esther">
+                <p>Michael & Esther</p>
+            </a>
+            <a href="event4.html">
+                <img src="images/event4.jpg" alt="Emma & Joy">
+                <p>Emma & Joy</p>
+            </a>
+            <a href="event5.html">
+                <img src="images/event5.jpg" alt="Sam & Grace">
+                <p>Sam & Grace</p>
+            </a>
+        </div>
+    </div>
+</section>
+  
+    
+   
+
+
+  
     
     
 
@@ -366,19 +473,160 @@
         </div>
     </footer>
       
+    <script src="script.js"></script>
 
+    <script src="https://unpkg.com/framer-motion@10.12.16/dist/framer-motion.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intersectionObserver/2.0.0/intersection-observer.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="script.js"></script>
+    
 
     <script>
         AOS.init({
             duration: 1000,
             once: true,
         });
+    </script>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.image-grid img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const imageNumber = document.getElementById('image-number');
+  const closeLightbox = document.getElementById('close-lightbox');
+  const zoomIn = document.getElementById('zoom-in');
+  const zoomOut = document.getElementById('zoom-out');
+  const prevArrow = document.getElementById('prev-arrow');
+  const nextArrow = document.getElementById('next-arrow');
+  const lightboxImageContainer = document.getElementById('lightbox-image-container');
+  let currentIndex = 0;
+  let isZoomed = false;
+  let scale = 1;
+  let startX = 0;
+  let startY = 0;
+  let originX = 0;
+  let originY = 0;
+
+  images.forEach(image => {
+      image.addEventListener('click', () => {
+          currentIndex = parseInt(image.dataset.index) - 1;
+          openLightbox(image.src, currentIndex + 1);
+      });
+  });
+
+  closeLightbox.addEventListener('click', () => {
+      lightbox.classList.add('hidden');
+      resetZoom();
+  });
+
+  zoomIn.addEventListener('click', () => {
+      if (!isZoomed) {
+          scale = 2;
+          isZoomed = true;
+          lightboxImage.style.transform = `scale(${scale})`;
+          lightboxImageContainer.style.overflow = 'auto';
+      }
+  });
+
+  zoomOut.addEventListener('click', () => {
+      if (isZoomed) {
+          resetZoom();
+      }
+  });
+
+  prevArrow.addEventListener('click', () => {
+      if (!isZoomed) {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+          updateLightboxImage();
+      }
+  });
+
+  nextArrow.addEventListener('click', () => {
+      if (!isZoomed) {
+          currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+          updateLightboxImage();
+      }
+  });
+
+  lightbox.addEventListener('wheel', (e) => {
+      e.preventDefault();
+  }, { passive: false });
+
+  function openLightbox(src, index) {
+      lightboxImage.src = src;
+      imageNumber.textContent = `Image ${index}`;
+      lightbox.classList.remove('hidden');
+  }
+
+  function updateLightboxImage() {
+      lightboxImage.src = images[currentIndex].src;
+      imageNumber.textContent = `Image ${currentIndex + 1}`;
+      resetZoom();
+  }
+
+  function resetZoom() {
+      scale = 1;
+      isZoomed = false;
+      lightboxImage.style.transform = `scale(${scale})`;
+      lightboxImage.style.left = `0px`;
+      lightboxImage.style.top = `0px`;
+      lightboxImageContainer.style.overflow = 'hidden';
+  }
+
+  // Move image when zoomed
+  lightboxImageContainer.addEventListener('mousedown', (e) => {
+      if (isZoomed) {
+          e.preventDefault();
+          startX = e.clientX - originX;
+          startY = e.clientY - originY;
+          lightboxImageContainer.addEventListener('mousemove', moveImage);
+      }
+  });
+
+  window.addEventListener('mouseup', () => {
+      lightboxImageContainer.removeEventListener('mousemove', moveImage);
+  });
+
+  function moveImage(e) {
+      if (isZoomed) {
+          originX = e.clientX - startX;
+          originY = e.clientY - startY;
+          lightboxImage.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+      }
+  }
+
+  // Pinch to zoom
+  let initialDistance = 0;
+
+  lightboxImageContainer.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 2) {
+          initialDistance = getDistance(e.touches[0], e.touches[1]);
+      }
+  });
+
+  lightboxImageContainer.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 2) {
+          const currentDistance = getDistance(e.touches[0], e.touches[1]);
+          const scaleChange = currentDistance / initialDistance;
+          scale = Math.min(Math.max(1, scale * scaleChange), 3); // limit zoom level between 1 and 3
+          lightboxImage.style.transform = `scale(${scale})`;
+          initialDistance = currentDistance;
+          isZoomed = scale > 1;
+      }
+  });
+
+  function getDistance(touch1, touch2) {
+      return Math.sqrt(
+          Math.pow(touch2.clientX - touch1.clientX, 2) +
+          Math.pow(touch2.clientY - touch1.clientY, 2)
+      );
+  }
+})
     </script>
     
 </body>
